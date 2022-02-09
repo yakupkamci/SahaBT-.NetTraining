@@ -13,3 +13,5 @@ Proje Asp.NET üzerinde MVC teknolojisine uygun gerçekleştirilmiştir.
                 " http://localhost:5000/home/country/1 " (Ülkeye göre Kadın Gruplama Listesi)
                 
 adresleri girilmelidir. Aksi girişlerde hata sayfası ile karşılaşılacaktır.
+Veri koleksiyonu okuma işlemi Data/FileRead.cs içerisinde gerçekleştirilmiştir.
+İsterleri yerine getirme Models/Response.cs içerisinde gerçekleştirilmiştir.
