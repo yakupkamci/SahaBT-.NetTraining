@@ -1,0 +1,39 @@
+﻿@model IDictionary<string, List<Persons>>
+
+
+<h2>Country</h2>
+
+@foreach (var item in Model)
+{
+    <p><b><u>@item.Key :</u></b></p>
+
+    <table style="margin-left:75px">
+        <thead>
+            <tr>
+                <td width="100px"><b>id</b></td>
+                <td width="120px"><b>FirstName</b></td>
+                <td width="120px"><b>LastName</b></td>
+                <td width="120px"><b>Email</b></td>
+                <td width="120px"><b>Gender</b></td>
+                <td width="120px"><b>Country</b></td>
+            </tr>
+            <tr></tr>
+        </thead>
+        <tbody>
+            
+            @foreach (var i in item.Value)
+            {
+                <tr>
+                    <td>@i.Id</td>
+                    <td>@i.FirstName</td>
+                    <td>@i.LastName</td>
+                    <td>@i.Email</td>
+                    <td>@i.Gender</td>
+                    <td>@i.Country</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+}
